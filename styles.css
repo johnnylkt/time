@@ -10,59 +10,66 @@ body {
 
 .clock-container {
     background: white;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.34rem;  
+    border-radius: 10px;  
+    box-shadow: 0 2.68px 4px rgba(0, 0, 0, 0.1);  
     text-align: center;
+    transform: scale(0.921);
 }
 
 .clock {
     display: inline-block;
-    margin: 0 2rem;
+    margin: 0 1.34rem;  
 }
 
 h2 {
     color: #666;  
-    font-size: 1.2rem;  
-    margin-bottom: 0.5rem;
+    font-size: 1rem;  
+    margin-bottom: 0.335rem;  
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    font-weight: normal;  
+    gap: 0.335rem;  
+    font-weight: normal;
 }
 
 h2 .timezone {
-    font-size: 0.9rem;
+    font-size: 0.75rem;  
     color: #888;
     font-weight: normal;
     background: #f8f9fa;
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
+    padding: 0.134rem 0.335rem;  
+    border-radius: 2.68px;  
 }
 
 .time {
-    font-size: 2.8rem;  
+    font-size: 1.876rem;  
     color: #333;  
     font-weight: 700;  
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;  
 }
 
 .date-container {
-    margin-top: 2rem;
-    padding-top: 1.5rem;
+    margin-top: 1.34rem;  
+    padding-top: 1.005rem;  
     border-top: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #current-date {
-    font-size: 2rem;
+    text-align: center;
+    font-size: 1.876rem;  /* reduced from a larger size */
     color: #333;
-    font-weight: 600;
+    font-weight: 700;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
+.date-timezone {
+    display: none;
+}
+
 .date-label {
-    font-size: 0.85rem;
-    color: #888;
-    margin-bottom: 0.4rem;
+    display: none;
 }
