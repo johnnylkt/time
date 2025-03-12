@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Time Zone Clock</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="importmap">
+    {
+        "imports": {
+            "luxon": "https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/es6/luxon.min.js"
+        }
+    }
+    </script>
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <div class="clock-container">
+        <div class="clock">
+            <h2>Central Time <span class="timezone">(CT)</span></h2>
+            <div id="central-time" class="time"></div>
+        </div>
+        <div class="clock">
+            <h2>Eastern Time <span class="timezone">(ET)</span></h2>
+            <div id="eastern-time" class="time"></div>
+        </div>
+        <div class="date-container">
+            <div class="date-label">Current Date (Central Time)</div>
+            <div id="current-date"></div>
+        </div>
+    </div>
+</body>
+</html>
