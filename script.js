@@ -22,16 +22,19 @@ function updateClocks() {
     }).toLowerCase();
     
     // Update Date (using Central Time)
-    document.getElementById('current-date').textContent = central.toLocaleString({ 
-        weekday: 'long',
-        month: 'long',
-        day: 'numeric',
-        year: 'numeric'
-    });
+    const dateElement = document.getElementById('current-date');
+    if (dateElement) {
+        dateElement.textContent = central.toLocaleString({ 
+            weekday: 'long',
+            month: 'long',
+            day: 'numeric',
+            year: 'numeric'
+        });
+    }
 }
-
-// Update every second
-setInterval(updateClocks, 1000);
 
 // Initial update
 updateClocks();
+
+// Update every second
+setInterval(updateClocks, 1000);
