@@ -1,5 +1,4 @@
 import { DateTime } from 'luxon';
-
 function updateClocks() {
     const now = DateTime.now();
     
