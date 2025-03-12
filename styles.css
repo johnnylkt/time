@@ -60,7 +60,7 @@ h2 .timezone {
 
 #current-date {
     text-align: center;
-    font-size: 1.876rem;  /* reduced from a larger size */
+    font-size: 1.4rem;  /* reduced from a larger size */
     color: #333;
     font-weight: 700;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
