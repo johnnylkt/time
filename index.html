@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Zone Clock</title>
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Load Luxon as a global script -->
-    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
-
-    <!-- Load your JavaScript -->
-    <script defer src="script.js"></script>
+    <script type="importmap">
+    {
+        "imports": {
+            "luxon": "https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/es6/luxon.min.js"
+        }
+    }
+    </script>
+    <script type="module" src="script.js"></script>
 </head>
 <body>
     <div class="clock-container">
